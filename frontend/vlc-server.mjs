@@ -46,7 +46,7 @@ import { createVLC } from "libvlc-wasm";
 
 const $ = (id) => document.getElementById(id);
 const PLAYBACK_KEY = "torbox_vlc_playback";
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 function msg(message) {
   $("msg").textContent = message;

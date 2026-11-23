@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import PlayerModal from "../components/PlayerModal";
 
-const API_BASE = "http://127.0.0.1:5000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 const IMG = "https://image.tmdb.org/t/p";
 
 const isHindi = (s) =>

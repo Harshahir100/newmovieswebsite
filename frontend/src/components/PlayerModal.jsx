@@ -16,7 +16,7 @@
     SkipForward,
   } from "lucide-react";
 
-  const API_BASE = "http://127.0.0.1:5000";
+  const API_BASE = import.meta.env.VITE_API_BASE_URL;
   const QUALITY_ORDER = ["2160p", "1080p", "720p", "480p", "Unknown"];
   const MIN_BRIGHT = 0.2;
   const MAX_BRIGHT = 1.8;
